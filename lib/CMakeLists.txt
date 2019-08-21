@@ -7,7 +7,7 @@ add_library(xmlreader SHARED ${SRC})
 
 target_link_libraries(xmlreader ${XML2_LIBRARIES})
 target_include_directories(xmlreader PUBLIC ${XML2_INCLUDE_DIRS})
-target_compile_options(xmlreader PUBLIC ${XML2_CFLAGS_OTHER})
+target_compile_options(xmlreader PUBLIC ${XML2_CFLAGS})
 
 set_target_properties(xmlreader PROPERTIES VERSION 1.0 SOVERSION 1)
 
